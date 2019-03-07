@@ -1,0 +1,21 @@
+{
+	"name": "shooting",
+	"productName": "Shooting",
+	"version": "0.1.0",
+	"main": "main.js",
+	"dependencies": {},
+	"devDependencies": {
+		"electron": "^4.0.6",
+		"electron-packager": "^8.7.2",
+		"electron-winstaller": "^3.0.1"
+	},
+	"scripts": {
+		"start": "electron .",
+		"build": "electron-packager . Shooting  --platform=win32 --arch=x64",
+		"package-win": "electron-packager . Shooting --overwrite --asar=true --platform=win32 --arch=x64  --prune=true --out=release-builds",
+		"create-installer-win": "node installers/windows/createinstaller.js"
+	},
+	"author": "Maksim Morozov",
+	"license": "MIT",
+	"description": "Shooting"
+}

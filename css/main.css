@@ -1,0 +1,119 @@
+* { 
+	margin: 0;
+	padding: 0; 
+}
+body{
+	text-align: center;
+	margin: 0; 
+	height: 100%; 
+	overflow: hidden;
+	font-family: system, -apple-system, '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+	background-color: white;
+}
+body:fullscreen {
+    background-color: rgba(255,255,255,0);
+}
+body:-webkit-full-screen {
+    background-color: rgba(255,255,255,0);
+}
+body:-moz-full-screen {
+    background-color: rgba(255,255,255,0);
+}
+a {
+	color: #68217A;
+}
+
+.field { 
+	display: block;
+	position: absolute;
+	background-color: transparent;
+}
+.controls {
+	float: right;
+	visibility: hidden;
+}
+.button-image {
+	padding-top: 2px;
+
+}
+
+
+#title-bar {
+	-webkit-app-region: drag;
+	position: sticky;
+	top: 0px;
+	left: 0px;
+	height: 24px; 
+	padding: 0px;
+	margin: 0px; 
+	color: #fff;
+	background-color: #6666dd;
+	font-family: sans-serif;
+
+}
+#title {
+	position: fixed;
+	top: 0px;
+	left: 24px; 
+	line-height: 24px;
+	font-size: 14px;
+	padding-left: 6px;
+
+}
+#title-bar-btns {
+	-webkit-app-region: no-drag;
+	position: fixed;
+	top: 0px;
+	right: 0px; 
+}
+#title-bar-btns button {
+	height: 24px;
+	width: 24px;
+	background-color: transparent;
+	border: none;
+	color: #ADADAD;
+	font-size: 16px;
+}
+#title-bar-btns-left{
+	-webkit-app-region: no-drag;
+	position: fixed;
+	top: 0px;
+	left: 0px; 
+}
+#title-bar-btns-left button {
+	height: 24px;
+	width: 24px;
+	background-color: transparent;
+	border: none;
+	color: #ADADAD;
+	font-size: 16px;
+}
+#title-bar-btns button:hover {
+	background-color: #3F3F41;
+}
+#title-bar-btns-left button:hover {
+	background-color: #3F3F41;
+}
+#title-bar-btns button:focus {
+	outline: none !important;
+}
+#title-bar-btns-left button:focus {
+	outline: none !important;
+}
+#title-bar-btns #close-btn:hover {
+	background-color: #ec2121 !important;
+}
+#content {
+	padding-top: 12px; 
+	color: #CCCCCC;
+}
+#fov { 
+	z-index: 1 
+}
+#maze { 
+	z-index: 2 
+}
+#reddot { 
+	z-index: 3 
+}
+
